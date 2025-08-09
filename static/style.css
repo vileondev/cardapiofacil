@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    background: #d32f2f;
+    color: white;
+    padding: 20px;
+    margin: 0;
+}
+
+.cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.prato {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 250px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.prato h2 {
+    margin-top: 0;
+}
+
+.preco {
+    color: #388e3c;
+    font-weight: bold;
+    font-size: 1.2em;
+}

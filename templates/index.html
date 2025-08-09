@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>🍽 Cardápio Online</h1>
+    <div class="cardapio">
+        {% for nome, descricao, preco in itens %}
+        <div class="prato">
+            <h2>{{ nome }}</h2>
+            <p>{{ descricao }}</p>
+            <span class="preco">R$ {{ "%.2f"|format(preco) }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    <a href="/admin">➕ Adicionar prato</a>
+</body>
+</html>
