@@ -1,0 +1,63 @@
+/* ====== Estilo da Página de Finalização ====== */
+
+.app-container {
+  background-color: #0d1117;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  max-width: 420px;
+  margin: 0 auto;
+  color: #c9d1d9;
+}
+
+h2, h5 {
+  color: #f0f6fc;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid #30363d;
+  background-color: #161b22;
+  padding: 15px;
+  color: #c9d1d9;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.bg-light.rounded {
+  background-color: #21262d !important;
+}
+
+.btn-success {
+  background-color: #238636;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #2ea043;
+}
+
+/* Botão voltar */
+.btn-secondary {
+  background-color: #57606a;
+  border: none;
+  transition: background-color 0.3s ease;
+  color: #c9d1d9;
+}
+
+.btn-secondary:hover {
+  background-color: #6c757d;
+  color: #f0f6fc;
+}
+
+.bottom-nav-line {
+  width: 140px;
+  height: 5px;
+  background-color: #f0f6fc;
+  border-radius: 100px;
+  margin: 20px auto 0;
+}
