@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Finalizar Pedido</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../static/finalizacaocs.css" />
+</head>
+<body>
+
+  <div class="app-container container py-4">
+    <header class="text-center mb-4">
+      <h2 class="fw-bold">Finalizar Pedido</h2>
+    </header>
+
+    <main>
+      <!-- Lista de itens do pedido -->
+      <section class="mb-4">
+        <div class="list-group">
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="mb-1">Hambúrguer Clássico</h5>
+              <small class="text-muted">1x</small>
+            </div>
+            <span class="fw-bold">R$ 20,00</span>
+          </div>
+          <div class="list-group-item d-flex justify-content-between align-items-center">
+            <div>
+              <h5 class="mb-1">Batata Frita</h5>
+              <small class="text-muted">1x</small>
+            </div>
+            <span class="fw-bold">R$ 15,00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Total -->
+      <section class="mb-4 p-3 bg-light rounded">
+        <div class="d-flex justify-content-between">
+          <h5 class="fw-bold">Total</h5>
+          <h5 class="fw-bold text-success">R$ 35,00</h5>
+        </div>
+      </section>
+
+      <!-- Botão confirmar -->
+      <div class="d-grid mb-3">
+        <button class="btn btn-success btn-lg">
+          <i class="bi bi-check-circle me-2"></i> Confirmar Pedido
+        </button>
+      </div>
+
+      <!-- Botão voltar ao cardápio -->
+      <div class="d-grid">
+        <a href="index.html" class="btn btn-secondary btn-lg">Voltar ao Cardápio</a>
+      </div>
+    </main>
+
+    <footer class="text-center mt-4">
+      <div class="bottom-nav-line"></div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

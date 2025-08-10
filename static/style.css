@@ -47,9 +47,7 @@ body {
 /* Botão de Oferta do Dia */
 .btn-deal {
     background-color: #21262d;
-    background-image: url('https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
-    background-size: cover;
-    background-position: center;
+    /* imagem pode ser adicionada depois */
     border: none;
     border-radius: 16px;
     padding: 2rem 1.5rem;
@@ -74,7 +72,7 @@ body {
     align-items: center;
     border: none;
     transition: background-color 0.3s ease;
-    margin: 0 auto; /* Centraliza o botão na coluna */
+    margin: 0 auto;
 }
 
 .btn-category .bi {
@@ -99,11 +97,13 @@ body {
     border: none;
     color: #c9d1d9;
     text-align: left;
+    text-decoration: none;
+    display: block;
 }
 
 .btn-popular-dish:hover {
-     background-color: #30363d;
-     color: #c9d1d9;
+    background-color: #30363d;
+    color: #c9d1d9;
 }
 
 .img-placeholder {
@@ -113,11 +113,38 @@ body {
     border-radius: 12px;
 }
 
+/* Texto dentro dos pratos */
 .btn-popular-dish h5 {
     color: #f0f6fc;
+    margin-bottom: 0.25rem;
 }
 
 .btn-popular-dish p {
     font-size: 0.9rem;
     color: #8b949e;
+}
+
+/* Linha de navegação inferior */
+.bottom-nav-line {
+    width: 140px;
+    height: 5px;
+    background-color: #f0f6fc;
+    border-radius: 100px;
+    margin: 20px auto 0;
+}
+
+/* List group itens para categorias e pratos */
+.list-group-item {
+    cursor: pointer;
+    background-color: #21262d;
+    border: none;
+    color: #c9d1d9;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #30363d;
 }
