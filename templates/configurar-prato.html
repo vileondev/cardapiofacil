@@ -11,10 +11,8 @@
   <div class="app-container container py-4">
     <h1 class="mb-4">Configurar Prato</h1>
 
-    <!-- Nome do prato - Pode ser dinâmico depois -->
     <h3 id="nome-prato">Nome do Prato</h3>
 
-    <!-- Lista de ingredientes - placeholder -->
     <div class="list-group mb-4">
       <label class="list-group-item d-flex justify-content-between align-items-center">
         <span>Queijo</span>
@@ -22,7 +20,7 @@
       </label>
       <label class="list-group-item d-flex justify-content-between align-items-center">
         <span>Alface</span>
-        <input type="checkbox" checked />
+        <input type="checkbox" />
       </label>
       <label class="list-group-item d-flex justify-content-between align-items-center">
         <span>Tomate</span>
@@ -32,13 +30,15 @@
         <span>Cebola</span>
         <input type="checkbox" />
       </label>
+      <label class="list-group-item d-flex justify-content-between align-items-center">
+        <span>Molho Especial</span>
+        <input type="checkbox" checked />
+      </label>
     </div>
 
-    <!-- Observações -->
     <label for="observacoes" class="form-label fw-bold">Observações:</label>
     <textarea id="observacoes" class="form-control mb-4" rows="3" placeholder="Ex: Sem cebola, ponto da carne..."></textarea>
 
-    <!-- Botão para confirmar configuração -->
     <div class="d-grid">
       <a href="finalizacao.html" class="btn btn-success btn-lg">
         <i class="bi bi-check-circle me-2"></i> Confirmar Prato
