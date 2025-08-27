@@ -56,19 +56,34 @@ def configurar_prato(prato_id):
         abort(404)
 
     if request.method == "POST":
+        # Ingredientes selecionados
+        ingredientes = request.form.getlist("ingredientes")
         observacoes = request.form.get("observacoes", "")
+
         item = {
             "id": prato["id"],
             "nome": prato["nome"],
-            "preco": 20.0,
+            "preco": 20.0,  # preço fictício (depois pode vir do banco)
+            "ingredientes": ingredientes,
             "obs": observacoes
         }
+
+        # Adicionar ao carrinho (na sessão)
         carrinho = session.get("carrinho", [])
         carrinho.append(item)
         session["carrinho"] = carrinho
+
         return redirect(url_for("finalizacao"))
 
     return render_template("configurar-prato.html", prato=prato)
+
+@app.route('/remover/<int:index>')
+def remover_item(index):
+    carrinho = session.get("carrinho", [])
+    if 0 <= index < len(carrinho):
+        carrinho.pop(index)
+        session["carrinho"] = carrinho
+    return redirect(url_for("finalizacao"))
 
 @app.route('/finalizacao')
 def finalizacao():

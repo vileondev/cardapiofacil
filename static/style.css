@@ -8,6 +8,19 @@ body {
     line-height: 1.6;
 }
 
+/* Botão do carrinho */
+.btn-cart {
+    background: transparent;
+    border: none;
+    color: #f0f6fc;
+    transition: transform 0.2s ease;
+}
+
+.btn-cart:hover {
+    transform: scale(1.1);
+    color: #58a6ff;
+}
+
 .app-container {
     max-width: 420px;
     margin: 0 auto;
