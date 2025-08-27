@@ -1,5 +1,6 @@
-/* ====== Estilo da Página de Finalização ====== */
-
+/* ================================
+   Estilo da Página de Finalização
+================================ */
 .app-container {
   background-color: #0d1117;
   min-height: 100vh;
@@ -9,51 +10,84 @@
   max-width: 420px;
   margin: 0 auto;
   color: #c9d1d9;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
 }
 
 h2, h5 {
   color: #f0f6fc;
+  font-weight: 600;
 }
 
+/* ================================
+   Lista de Itens do Pedido
+================================ */
 .list-group-item {
   border: none;
   border-bottom: 1px solid #30363d;
   background-color: #161b22;
   padding: 15px;
   color: #c9d1d9;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
 .list-group-item:last-child {
   border-bottom: none;
 }
 
-.bg-light.rounded {
-  background-color: #21262d !important;
+.list-group-item:hover {
+  background-color: #21262d;
+  transform: translateX(4px);
 }
 
+/* ================================
+   Caixa do Total
+================================ */
+.bg-light.rounded {
+  background-color: #21262d !important;
+  border: 1px solid #30363d;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* ================================
+   Botões
+================================ */
 .btn-success {
   background-color: #238636;
   border: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.25);
 }
 
 .btn-success:hover {
   background-color: #2ea043;
+  transform: scale(1.03);
 }
 
-/* Botão voltar */
 .btn-secondary {
   background-color: #57606a;
   border: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
   color: #c9d1d9;
+  font-weight: 500;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
 
 .btn-secondary:hover {
   background-color: #6c757d;
   color: #f0f6fc;
+  transform: scale(1.02);
 }
 
+/* ================================
+   Linha de navegação inferior
+================================ */
 .bottom-nav-line {
   width: 140px;
   height: 5px;
