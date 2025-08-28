@@ -91,5 +91,13 @@ def finalizacao():
     total = sum(item["preco"] for item in carrinho)
     return render_template("finalizacao.html", carrinho=carrinho, total=total)
 
+@app.route('/pratos')
+def pratos():
+    return render_template('categorias-alimentos/pratos.html')
+
+@app.route('/bebidas')
+def bebidas():
+    return render_template('categorias-alimentos/bebidas.html')
+
 if __name__ == '__main__':
     app.run(debug=True)

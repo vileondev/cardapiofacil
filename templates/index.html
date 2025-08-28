@@ -43,25 +43,25 @@
         <section class="mb-5 text-center">
             <div class="row justify-content-center g-3">
                 <div class="col-6 col-sm-3">
-                    <a href="categorias-alimentos/entradas.html" class="btn btn-category">
+                    <a href="{{ url_for('entradas') }}" class="btn btn-category">
                         <i class="bi bi-fork-knife"></i>
                     </a>
                     <p class="mt-2">Entradas</p>
                 </div>
                 <div class="col-6 col-sm-3">
-                    <a href="categorias-alimentos/pratos.html" class="btn btn-category">
+                    <a href="{{ url_for('pratos') }}" class="btn btn-category">
                         <i class="bi bi-egg-fried"></i>
                     </a>
                     <p class="mt-2">Pratos</p>
                 </div>
                 <div class="col-6 col-sm-3">
-                    <a href="categorias-alimentos/sobremesas.html" class="btn btn-category">
+                    <a href="{{ url_for('sobremesas') }}" class="btn btn-category">
                         <i class="bi bi-cloud"></i>
                     </a>
                     <p class="mt-2">Sobremesas</p>
                 </div>
                 <div class="col-6 col-sm-3">
-                    <a href="categorias-alimentos/bebidas.html" class="btn btn-category">
+                    <a href="{{ url_for('bebidas') }}" class="btn btn-category disabled">
                         <i class="bi bi-cup-straw"></i>
                     </a>
                     <p class="mt-2">Bebidas</p>
@@ -70,166 +70,166 @@
         </section>
         
             <section class="mb-4">
-                <h3 class="fw-bold mb-3">Pratos populares</h3>
-                <div class="row g-3">
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=hamburguer" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Hambúrguer Clássico</h5>
-                                    <p class="mb-0">Hambúrguer suculento com queijo, alface e tomate.</p>
-                                </div>
-                            </div>
-                        </a>
+    <h3 class="fw-bold mb-3">Pratos populares</h3>
+    <div class="row g-3">
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=1) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg'); background-size: cover; background-position: center;"></div>
                     </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=xbagunca" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://images.pexels.com/photos/156114/pexels-photo-156114.jpeg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">X-bagunça</h5>
-                                    <p class="mb-0">Um hambúrguer com tudo que um hambúrguer precisa e um pouco mais.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=batatafrita" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Batata Frita</h5>
-                                    <p class="mb-0">Porção crocante de batata frita dourada.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=nuggets" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://wp-cdn.typhur.com/wp-content/uploads/2025/02/air-fryer-frozen-chicken-nuggets.jpg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Nuggets de Frango</h5>
-                                    <p class="mb-0">Deliciosos nuggets de frango empanados e crocantes.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=pizza" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://static.barato.com.br/2024/0913/g_7b62dbd619.jpg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Pizza de Calabresa</h5>
-                                    <p class="mb-0">Pizza saborosa com calabresa fatiada e cebola.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=hotdog" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://s2-receitas.glbimg.com/01v-eQY-6beWQ21VtiXxBpnkZxE=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/F/l/LhRH4rROi1SPEAJYo9NA/cachorro-quente-completo-veja-incrementos-que-voce-so-encontra-no-brasil.jpg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Cachorro quente</h5>
-                                    <p class="mb-0">Cachorro-quente com salsicha, milho, batata palha e molhos.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=tacos" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_735057-MLB81809927139_012025-O-12-tacos-mexicanos-kit-com-tempero-e-molho-importado.webp'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Tacos Mexicanos</h5>
-                                    <p class="mb-0">Tacos recheados com carne, alface, queijo e molho picante.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=pastel" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://imagens.imirante.com.br/imagens/noticias/2024/06/21/THbfQZESYIEfaN6DXludi4Ufr3fRSxJhMZAVDzla.png?w=896&h=448&crop=800%2C+400%2C+0%2C+170.92553191489&fit=crop&s=a8bdd9063d5ae4b377a50efa2df7096b'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Pastel de Carne</h5>
-                                    <p class="mb-0">Pastel frito recheado com carne moída temperada.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=saladacaesar" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2023/02/28/whatsapp-image-2023-02-28-at-01-53-47-(1)-1iyhprrq5e9tc.jpeg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Salada Caesar</h5>
-                                    <p class="mb-0">Salada leve com alface, frango grelhado e molho especial.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=sushi" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://images.mrcook.app/recipe-image/0192caf2-c89f-7597-9804-b60e60f55008'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Sushi Variado</h5>
-                                    <p class="mb-0">Combinado de sushis frescos com peixe cru e arroz temperado.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=lasanha" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://guiadacozinha.com.br/wp-content/uploads/2019/10/lasanha-bolonhesa.jpg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Lasanha à Bolonhesa</h5>
-                                    <p class="mb-0">Lasanha gratinada com molho à bolonhesa e queijo.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-12">
-                        <a href="configurar-prato.html?prato=sorvete" class="btn btn-popular-dish w-100">
-                            <div class="row g-0 align-items-center">
-                                <div class="col-4">
-                                    <div class="img-placeholder" style="background-image: url('https://receitadaboa.com.br/wp-content/uploads/2024/12/iStock-153560334.jpg'); background-size: cover; background-position: center;"></div>
-                                </div>
-                                <div class="col-8 text-start ps-3">
-                                    <h5 class="fw-bold">Sorvete de Chocolate</h5>
-                                    <p class="mb-0">Taça de sorvete cremoso de chocolate com cobertura.</p>
-                                </div>
-                            </div>
-                        </a>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Hambúrguer Clássico</h5>
+                        <p class="mb-0">Hambúrguer suculento com queijo, alface e tomate.</p>
                     </div>
                 </div>
-            </section>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=2) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://images.pexels.com/photos/156114/pexels-photo-156114.jpeg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">X-bagunça</h5>
+                        <p class="mb-0">Um hambúrguer com tudo que um hambúrguer precisa e um pouco mais.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=3) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://images.pexels.com/photos/1583884/pexels-photo-1583884.jpeg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Batata Frita</h5>
+                        <p class="mb-0">Porção crocante de batata frita dourada.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=4) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://wp-cdn.typhur.com/wp-content/uploads/2025/02/air-fryer-frozen-chicken-nuggets.jpg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Nuggets de Frango</h5>
+                        <p class="mb-0">Deliciosos nuggets de frango empanados e crocantes.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=5) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://static.barato.com.br/2024/0913/g_7b62dbd619.jpg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Pizza de Calabresa</h5>
+                        <p class="mb-0">Pizza saborosa com calabresa fatiada e cebola.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=6) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://s2-receitas.glbimg.com/01v-eQY-6beWQ21VtiXxBpnkZxE=/0x0:1024x683/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_1f540e0b94d8437dbbc39d567a1dee68/internal_photos/bs/2023/F/l/LhRH4rROi1SPEAJYo9NA/cachorro-quente-completo-veja-incrementos-que-voce-so-encontra-no-brasil.jpg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Cachorro quente</h5>
+                        <p class="mb-0">Cachorro-quente com salsicha, milho, batata palha e molhos.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=7) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://http2.mlstatic.com/D_NQ_NP_735057-MLB81809927139_012025-O-12-tacos-mexicanos-kit-com-tempero-e-molho-importado.webp'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Tacos Mexicanos</h5>
+                        <p class="mb-0">Tacos recheados com carne, alface, queijo e molho picante.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=8) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://imagens.imirante.com.br/imagens/noticias/2024/06/21/THbfQZESYIEfaN6DXludi4Ufr3fRSxJhMZAVDzla.png?w=896&h=448&crop=800%2C+400%2C+0%2C+170.92553191489&fit=crop&s=a8bdd9063d5ae4b377a50efa2df7096b'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Pastel de Carne</h5>
+                        <p class="mb-0">Pastel frito recheado com carne moída temperada.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=9) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://p2.trrsf.com/image/fget/cf/1200/900/middle/images.terra.com/2023/02/28/whatsapp-image-2023-02-28-at-01-53-47-(1)-1iyhprrq5e9tc.jpeg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Salada Caesar</h5>
+                        <p class="mb-0">Salada leve com alface, frango grelhado e molho especial.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=10) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://images.mrcook.app/recipe-image/0192caf2-c89f-7597-9804-b60e60f55008'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Sushi Variado</h5>
+                        <p class="mb-0">Combinado de sushis frescos com peixe cru e arroz temperado.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=11) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://guiadacozinha.com.br/wp-content/uploads/2019/10/lasanha-bolonhesa.jpg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Lasanha à Bolonhesa</h5>
+                        <p class="mb-0">Lasanha gratinada com molho à bolonhesa e queijo.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-12">
+            <a href="{{ url_for('configurar_prato', prato_id=12) }}" class="btn btn-popular-dish w-100">
+                <div class="row g-0 align-items-center">
+                    <div class="col-4">
+                        <div class="img-placeholder" style="background-image: url('https://receitadaboa.com.br/wp-content/uploads/2024/12/iStock-153560334.jpg'); background-size: cover; background-position: center;"></div>
+                    </div>
+                    <div class="col-8 text-start ps-3">
+                        <h5 class="fw-bold">Sorvete de Chocolate</h5>
+                        <p class="mb-0">Taça de sorvete cremoso de chocolate com cobertura.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
         </main>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
